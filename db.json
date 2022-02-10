@@ -1,0 +1,65 @@
+{
+  "subscriptions": [
+    {
+      "id": "joshsa",
+      "url": "https://www.vinted.fr/vetements?search_text=Nike%20dunk&catalog[]=1231&size_id[]=780&brand_id[]=53",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "8tyd4c",
+      "url": "https://www.vinted.fr/vetements?search_text=Nike%20dunk&catalog[]=1231&size_id[]=780&brand_id[]=53&price_to=100&currency=EUR",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "8vc887",
+      "url": "https://www.vinted.fr/vetements?search_text=Nike%20dunk&catalog[]=1231&size_id[]=780&brand_id[]=53&price_to=150&currency=EUR&status[]=6&price_from=90",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "0b1o7n",
+      "url": "https://www.vinted.fr/vetements?search_text=air%20jordan%204&catalog[]=1231&size_id[]=780&brand_id[]=53&currency=EUR&status[]=6&order=newest_first&price_to=200",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "9u121e",
+      "url": "https://www.vinted.fr/vetements?search_text=air%20jordan%204&catalog[]=1231&size_id[]=780&brand_id[]=53&currency=EUR&status[]=6&order=newest_first&price_to=250",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "uw9kn5",
+      "url": "https://www.vinted.fr/vetements?search_text=air%20jordan%204&catalog[]=1231&size_id[]=780&brand_id[]=53&currency=EUR&status[]=6&order=relevance",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "dgvy8",
+      "url": "https://www.vinted.fr/vetements?search_text=air%20jordan%204&catalog[]=1231&size_id[]=780&brand_id[]=53&currency=EUR&status[]=6&order=relevance",
+      "channelID": "860968807379632139"
+    },
+    {
+      "id": "msmhus",
+      "url": "https://www.vinted.fr/vetements?search_text=air%20jordan%204&catalog[]=1231&size_id[]=780&brand_id[]=53&currency=EUR&status[]=6&order=relevance",
+      "channelID": "860968807379632141"
+    },
+    {
+      "id": "4mvw9b",
+      "url": "https://www.vinted.be/vetements?search_text=fleece&size_id[]=208&size_id[]=209&size_id[]=207&brand_id[]=2319&currency=EUR&price_to=40",
+      "channelID": "941014248631459890"
+    },
+    {
+      "id": "2u0bra",
+      "url": "https://www.vinted.be/vetements?currency=EUR&brand_id[]=362&brand_id[]=872289&catalog[]=260&catalog[]=263&status[]=6&status[]=1&status[]=2&status[]=3&price_to=10",
+      "channelID": "941072505140023396"
+    }
+  ],
+  "last_item_ts_joshsa": 1644519268000,
+  "last_item_ts_8tyd4c": 1644502731000,
+  "last_item_ts_8vc887": 1644510692000,
+  "last_item_ts_0b1o7n": 1644398765000,
+  "last_item_ts_9u121e": 1644507468000,
+  "last_item_ts_uw9kn5": 1644507468000,
+  "last_item_ts_dgvy8": 1644507468000,
+  "last_item_ts_msmhus": 1644507468000,
+  "last_item_ts_4mvw9b": 1644517221000,
+  "last_item_ts_2u0bra": 1644519499000,
+  "is_first_sync": false
+}
