@@ -231,4 +231,4 @@ client.on('interactionCreate', (interaction) => {
     }
 });
 
-client.login(config.token);
+client.login(process.env.token);
