@@ -89,7 +89,7 @@ const syncSubscription = (sub) => {
                     .setImage(item.photos[0]?.url)
                     .setColor('#008000')
                     .setTimestamp(new Date(item.created_at_ts))
-                    .setFooter(`Article lié à la recherche : ${sub.id}`)
+                    .setFooter(`La recherche : ${sub.id}`)
                     .addField('Taille', item.size || 'vide', true)
                     .addField('Prix', item.price || 'vide', true)
                     .addField('Condition', item.status || 'vide', true);
