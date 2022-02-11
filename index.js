@@ -89,8 +89,7 @@ const syncSubscription = (sub) => {
                     .setImage(item.photos[0]?.url)
                     .setColor('#008000')
                     .setTimestamp(new Date(item.created_at_ts))
-                    .setFooter(`La recherche : ${sub.id}`)
-                    .setURL(`https://www.vinted.fr${sub.url}`)
+                    .setFooter(`Vinted bots - ${sub.id}`)
                     .addField('Taille', item.size || 'vide', true)
                     .addField('Prix', item.price || 'vide', true)
                     .addField('Condition', item.status || 'vide', true);
@@ -100,12 +99,12 @@ const syncSubscription = (sub) => {
                             new Discord.MessageButton()
                                 .setLabel('Détails')
                                 .setURL(item.url)
-                                .setEmoji('🔎')
+                                .setEmoji('👀')
                                 .setStyle('LINK'),
                             new Discord.MessageButton()
                                 .setLabel('Acheter')
                                 .setURL(`https://www.vinted.fr/transaction/buy/new?source_screen=item&transaction%5Bitem_id%5D=${item.id}`)
-                                .setEmoji('💸')
+                                .setEmoji('🤑')
                                 .setStyle('LINK')
                         ])
                 ] });
