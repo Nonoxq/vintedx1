@@ -90,21 +90,21 @@ const syncSubscription = (sub) => {
                     .setColor('#008000')
                     .setTimestamp(new Date(item.created_at_ts))
                     .setFooter(`Vinted bots - ${sub.id}`)
-                    .addField('Taille', item.size || 'vide', true)
-                    .addField('Prix', item.price || 'vide', true)
+                    .addField('Size', item.size || 'vide', true)
+                    .addField('Price', item.price || 'vide', true)
                     .addField('Condition', item.status || 'vide', true);
                 client.channels.cache.get(sub.channelID)?.send({ embeds: [embed], components: [
                     new Discord.MessageActionRow()
                         .addComponents([
                             new Discord.MessageButton()
-                                .setLabel('Détails')
+                                .setLabel('Details')
                                 .setURL(item.url)
                                 .setEmoji('👀')
                                 .setStyle('LINK'),
                             new Discord.MessageButton()
-                                .setLabel('Acheter')
+                                .setLabel('Buy now')
                                 .setURL(`https://www.vinted.fr/transaction/buy/new?source_screen=item&transaction%5Bitem_id%5D=${item.id}`)
-                                .setEmoji('🤑')
+                                .setEmoji('💸')
                                 .setStyle('LINK')
                         ])
                 ] });
