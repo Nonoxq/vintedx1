@@ -152,7 +152,7 @@ client.on('ready', () => {
     db.set('is_first_sync', true);
 
     const messages = [
-        `🤝 This free project takes a lot of time to create. If you have the means, feel free to suport thid build with a donation ! paypal.me/Arnaudsim`,
+        `🤝 This free project takes a lot of time to create. If you have the means, feel free to suport this build with a donation ! paypal.me/Arnaudsim`,
     ];
     let idx = 0;
     const donate = () => console.log(messages[ idx % 2 ]);
