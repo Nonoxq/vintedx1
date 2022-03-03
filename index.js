@@ -70,12 +70,12 @@ const syncSubscription = (sub) => {
             const isFirstSync = db.get('is_first_sync');
             const lastItemTimestamp = db.get(`last_item_ts_${sub.id}`);
             const items = res.items
-                .sort((a, b) => new Date(b.created_at_ts).getTime() - new Date(a.created_at_ts).getTime())
-                .filter((item) => !lastItemTimestamp || new Date(item.created_at_ts) > lastItemTimestamp);
+                .sort((a, b) => new Date(b.photo.high_resolution.timestamp).getTime() - new Date(a.photo.high_resolution.timestamp).getTime())
+                .filter((item) => !lastItemTimestamp || new Date(item.photo.high_resolution.timestamp) > lastItemTimestamp);
 
             if (!items.length) return void resolve();
 
-            const newLastItemTimestamp = new Date(items[0].created_at_ts).getTime();
+            const newLastItemTimestamp = new Date(items[0].photo.high_resolution.timestamp).getTime();
             if (!lastItemTimestamp || newLastItemTimestamp > lastItemTimestamp) {
                 db.set(`last_item_ts_${sub.id}`, newLastItemTimestamp);
             }
@@ -85,15 +85,13 @@ const syncSubscription = (sub) => {
             for (let item of itemsToSend) {
                 const embed = new Discord.MessageEmbed()
                     .setTitle(item.title)
-                    .setURL(`https://www.vinted.fr${item.path}`)
-                    .setImage(item.photos[0]?.url)
+                    .setURL(item.url)
+                    .setImage(item.photo.url)
                     .setColor('#008000')
-                    .setTimestamp(new Date(item.created_at_ts))
+                    .setTimestamp(new Date(item.photo.high_resolution.timestamp))
                     .setFooter(`Vinted bots - ${sub.id}`)
-                    .addField('Size', item.size || 'vide', true)
                     .addField('Price', item.price || 'vide', true)
-                    .addField('Condition', item.status || 'vide', true);
-                client.channels.cache.get(sub.channelID)?.send({ embeds: [embed], components: [
+                    .addField('Taille', item.size_title || 'vide', true);              client.channels.cache.get(sub.channelID)?.send({ embeds: [embed], components: [
                     new Discord.MessageActionRow()
                         .addComponents([
                             new Discord.MessageButton()
@@ -229,5 +227,22 @@ client.on('interactionCreate', (interaction) => {
         }
     }
 });
+client.login(process.env.VINTED_BOT_TOKEN);
 
+function getReputationStars (reputationPercent: number) {
+    let reputCalc = Math.round(reputationPercent / 0.2);
+    let reputDemiCalc = reputationPercent % 0.2;
+
+    let starsStr = '';
+
+    for (let i = 0; i < reputCalc; i++) {
+        starsStr += ':star:';
+    }
+
+    if (reputDemiCalc !== 0 && reputCalc < 5) {
+        starsStr += ' (+0.5)';
+    }
+
+    return starsStr;
+}
 client.login(process.env.token);
