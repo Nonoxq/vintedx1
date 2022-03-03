@@ -2566,12 +2566,13 @@
   "resolved" "https://registry.npmjs.org/vali-date/-/vali-date-1.0.0.tgz"
   "version" "1.0.0"
 
-"vinted-api@^2.5.0":
-  "integrity" "sha512-n9Ij0rVBMJneMKosDmvkX78rpjOhL2Jf/43sotv2KpAm8D8PwUylaymwitocMS1C9+JSA4yKHJvy3bH1diUsxA=="
-  "resolved" "https://registry.npmjs.org/vinted-api/-/vinted-api-2.5.0.tgz"
-  "version" "2.5.0"
+"vinted-api@^2.9.0":
+  "integrity" "sha512-iuP6If2kUCwGSuyLasYkK83l9NErhqhyVNw2CfNbS4WtUJZ7HoKF7m6yK3JDZCNRU9wEh7IR7ifc/MI1MOMH+w=="
+  "resolved" "https://registry.npmjs.org/vinted-api/-/vinted-api-2.9.0.tgz"
+  "version" "2.9.0"
   dependencies:
     "cookie" "^0.4.1"
+    "https-proxy-agent" "^5.0.0"
     "jest" "^27.0.6"
     "node-fetch" "^2.6.1"
     "user-agents" "^1.0.642"
