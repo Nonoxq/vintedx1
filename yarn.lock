@@ -1243,6 +1243,11 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
+"fsevents@^2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
+
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -2627,7 +2632,16 @@
     "tr46" "~0.0.3"
     "webidl-conversions" "^3.0.0"
 
-"whatwg-url@^8.0.0", "whatwg-url@^8.5.0":
+"whatwg-url@^8.0.0":
+  "integrity" "sha512-gAojqb/m9Q8a5IV96E3fHJM70AzCkgt4uXYX2O7EmuyOnLrViCQlsEBmF9UQIu3/aeAIp2U17rtbpZWNntQqdg=="
+  "resolved" "https://registry.npmjs.org/whatwg-url/-/whatwg-url-8.7.0.tgz"
+  "version" "8.7.0"
+  dependencies:
+    "lodash" "^4.7.0"
+    "tr46" "^2.1.0"
+    "webidl-conversions" "^6.1.0"
+
+"whatwg-url@^8.5.0":
   "integrity" "sha512-gAojqb/m9Q8a5IV96E3fHJM70AzCkgt4uXYX2O7EmuyOnLrViCQlsEBmF9UQIu3/aeAIp2U17rtbpZWNntQqdg=="
   "resolved" "https://registry.npmjs.org/whatwg-url/-/whatwg-url-8.7.0.tgz"
   "version" "8.7.0"
