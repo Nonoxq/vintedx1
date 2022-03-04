@@ -3,7 +3,7 @@
   "version": "3.17.0",
   "main": "dist/index.js",
   "author": "Androz2091 <androz2091@gmail.com>",
-  "type": "node",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "start": "node create-db.js && node create-cmds && node dist/index.js",
